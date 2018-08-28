@@ -15,6 +15,5 @@ RUN locale-gen en_AU.UTF-8 en_US.UTF-8 \
 
 # Allow installing PPAs
 RUN apt-get install -qy software-properties-common
-RUN apt-get clean \
-	&& rm -rf var/lib/apt/lists/*
+RUN apt-get clean
 
